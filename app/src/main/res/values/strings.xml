@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mark2</string>
+    <string name="drop_db">\" DROP TABLE IF EXISTS \"</string>
+
+</resources>

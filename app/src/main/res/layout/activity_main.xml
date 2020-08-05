@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="50dp"
+    android:textColor="#000"
+    android:textSize="18sp"
+    android:id="@+id/current_Location"/>
+
+    <com.example.mark2.ui.RadarView
+        android:id="@+id/radarView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/current_Location"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/radarView"
+        android:layout_margin="20dp"
+        android:textColor="#000" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:textAlignment="center"
+    android:id="@+id/Nearest_location_TextView"
+    android:textSize="18sp"
+    android:textColor="#000"
+    android:layout_below="@+id/distance"
+    android:layout_margin="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Nearest_location_TextView"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/reading_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Take Reading" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/locations_updater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:text="Back"
+
+                />
+
+            <Button
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:text="E-Mail" />
+
+            <Button
+                android:id="@+id/all_readings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:text="Next" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

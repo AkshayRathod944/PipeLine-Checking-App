@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/statusImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/Location_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/statusImageView"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Location Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/Location_Co_ordnates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Location_title"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/statusImageView"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Location Co-ordnates"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Location_Co_ordnates"
+                android:layout_margin="5dp"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Location_Co_ordnates"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/username"
+                android:maxLines="1"
+                android:text="Akshay"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name_textview"
+                android:layout_margin="5dp"
+                android:text="Current"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/current_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name_textview"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/current"
+                android:maxLines="1"
+                android:text="Current"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/voltage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_textview"
+                android:layout_margin="5dp"
+                android:text="voltage"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/voltage_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_textview"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/voltage"
+                android:maxLines="1"
+                android:text="voltage"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/timestamp_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voltage_textview"
+                android:layout_margin="5dp"
+                android:maxLines="1"
+                android:text="timestamp"
+                android:textAlignment="textEnd"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
